@@ -1,0 +1,63 @@
+server:
+  port: 8082
+
+#Xác định xử dụng DB nào cho project
+spring:
+  profiles:
+    active: qa
+  
+---
+
+spring:
+  profiles: dev
+  datasource:
+    driver-class-name: org.h2.Driver
+    password: password
+    url: jdbc:h2:mem:dcbapp
+    username: sa
+  jpa:
+    hibernate:
+      ddl-auto: update
+      show-sql: true
+wellcome:
+  message: Wellcome to Loc Dang Code!!!
+  
+---
+
+spring:
+  profiles: qa
+  datasource:
+    driver-class-name: org.h2.Driver
+    password: password
+    url: jdbc:h2:mem:dcbapp-qa
+    username: sa
+  jpa:
+    hibernate:
+      ddl-auto: update
+      show-sql: true
+wellcome:
+  message: Wellcome to Loc Dang Code!!!
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        exclude: "env,bean"
+  
+---
+
+spring:
+  profiles: prod
+  datasource:
+    driver-class-name: org.h2.Driver
+    password: password
+    url: jdbc:h2:mem:dcbapp-prod
+    username: sa
+  jpa:
+    hibernate:
+      ddl-auto: update
+      show-sql: true
+wellcome:
+  message: Wellcome to Loc Dang Code!!!  
+  
