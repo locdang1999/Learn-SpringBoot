@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="spring-boot-swagger2"/>
+<aop-project name="spring-boot-webflux"/>
+<aop-project name="web"/>
+<aop-project name="Springboot-tutorial"/>
+<aop-project name="spring-cloud-config-client"/>
+<aop-project name="test-mockito-basic"/>
+<aop-project name="repository"/>
+<aop-project name="service"/>
+<aop-project name="employee"/>
+<aop-project name="spring-security-hibernate-jwt"/>
+<aop-project name="spring-cloud-config-server"/>
+<aop-project name="spring-security-hibernate"/>
+<aop-project name="domain"/>
+<aop-project name="spring-boot-swagger3-openapi3"/>
+<aop-project name="datajpa"/>
+<aop-project name="OauthAuthorizationServer"/>
+<aop-project name="email-app"/>
+<aop-project name="spring-redis"/>
+<aop-project name="mail-sender"/>
+<aop-project name="student-management-system"/>
+<aop-project name="spring-data-jpa"/>
+<aop-project name="spring-aop-demo"/>
+<aop-project name="masterclass"/>
+<aop-project name="spring-configuration-properties"/>
+<aop-project name="spring-security-example"/>
+<aop-project name="security"/>
+</aop-reference-model>
